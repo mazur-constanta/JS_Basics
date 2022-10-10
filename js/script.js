@@ -70,7 +70,7 @@ const category = 'toys';
 console.log(`http://toys.com/${category}/5`);
 
 const userName = "Constanta";
-alert(`Hi dear user, ${userName}`);*/
+alert(`Hi dear user, ${userName}`);
 
 // console.log('arr' + " - object");
 // console.log(4 + " - object");
@@ -96,4 +96,26 @@ console.log(2 * 4 === '8');
 const isChecked = true,
     isClose = false;
 
-console.log(isChecked && !isClose);
+console.log(isChecked && !isClose);*/
+
+let numberOfFilms = +prompt("How many movies you've already watched?", "");
+
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
+
+let lastMovie = prompt("What was the last movie you watched?", ""),
+    rate = prompt("How much do you rate it?", ""),
+    lastMovie2 = prompt("What was the last movie you watched?", ""),
+    rate2 = prompt("How much do you rate it?", "");
+
+personalMovieDB.movies[lastMovie] = rate;
+personalMovieDB.movies[lastMovie2] = rate2;
+
+console.log(numberOfFilms);
+console.log(personalMovieDB);
+console.log(personalMovieDB.movies);
