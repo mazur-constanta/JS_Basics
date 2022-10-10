@@ -98,6 +98,7 @@ const isChecked = true,
 
 console.log(isChecked && !isClose);*/
 
+/*
 let numberOfFilms = +prompt("How many movies you've already watched?", "");
 
 const personalMovieDB = {
@@ -119,3 +120,45 @@ personalMovieDB.movies[lastMovie2] = rate2;
 console.log(numberOfFilms);
 console.log(personalMovieDB);
 console.log(personalMovieDB.movies);
+*/
+
+/*
+if (9 != 9) {
+    console.log("Ok");
+} else {
+    console.log("Error");
+}
+
+const num = 50;
+
+if (num < 49) {
+    console.log("Error");
+} else if (num > 100) {
+    console.log("Too much");
+} else {
+    console.log("Ok");
+}
+
+(num === 50) ? console.log("OK") : console.log("Error");
+
+switch (num) {
+    case 49:
+        console.log("Error");
+        break;
+    case 50:
+        console.log("OK");
+        break;
+    default:
+        console.log("Not this time");
+        break;
+}*/
+
+const hamburger = 3;
+const fries = 1;
+const cola = 0;
+
+if ((hamburger === 3 && cola === 1) && fries) {
+    console.log("We're well-fed");
+} else {
+    console.log("We're leaving this restaurant");
+}
