@@ -151,7 +151,7 @@ switch (num) {
     default:
         console.log("Not this time");
         break;
-}*/
+}
 
 const hamburger = 3;
 const fries = 1;
@@ -162,3 +162,83 @@ if ((hamburger === 3 && cola === 1) && fries) {
 } else {
     console.log("We're leaving this restaurant");
 }
+
+let num = 50;
+
+while (num <= 55) {
+    console.log(num);
+    num++;
+}
+
+do {
+    console.log(num);
+    num++;
+} while (num < 55);
+
+for (let i = 1; i < 10; i++) {
+    if (i === 6) {
+        break;
+    }
+    console.log(i);
+}
+
+//
+// for (let i = 0; i < 3; i++) {
+//     console.log(i);
+//     for (let j = 0; j < 3; j++) {
+//         console.log(j);
+//     }
+// }
+
+//
+let result = "";
+const triangleLength = 7;
+
+for (let i = 1; i < triangleLength; i++) {
+    for (let j = 0; j < i; j++) {
+        result += "*";
+    }
+    result += "\n";
+}
+
+console.log(result);
+
+//
+first: for (let i = 0; i < 3; i++) {
+    console.log(`First level: ${i}`);
+    for (let j = 0; j < 3; j++) {
+        console.log(`Second level: ${i}`);
+        for (let k = 0; k < 3; k++) {
+            if (k === 2) continue first;
+            console.log(`Third level: ${k}`);
+        }
+    }
+}*/
+
+for (let i = 5; i <= 10; i++) {
+    console.log(i);
+}
+
+for (let j = 20; j >= 10; j--) {
+    if (j === 13) {
+        break;
+    } else {
+        console.log(j);
+    }
+}
+
+for (let k = 2; k <= 10; k++) {
+    if (k % 2 === 0) {
+        console.log(k);
+    } 
+}
+
+
+let start = 2;
+
+do {
+    if (start % 2 === 0) {
+        console.log(start);
+    }
+    start++;
+} while (start < 11);
